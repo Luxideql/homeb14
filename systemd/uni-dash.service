@@ -1,0 +1,17 @@
+[Unit]
+# Дашборд статистики торгового бота UNI (порт 8097).
+Description=UNI дашборд (статистика demo-бота)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=homeb14
+Environment=HOME=/home/homeb14
+WorkingDirectory=/home/homeb14/strategy/uni
+ExecStart=/usr/bin/python3 /home/homeb14/strategy/uni/uni_dash.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

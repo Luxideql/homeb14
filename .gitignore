@@ -1,0 +1,17 @@
+# Секреты — НИКОГДА в git
+.env
+*.env
+strategy/**/.env
+
+# Рантайм бота (генерируется на лету)
+strategy/uni/*.json
+strategy/uni/*.csv
+strategy/uni/*.lock
+strategy/uni/uni_last_seen
+strategy/uni/DISABLE_*
+strategy/uni/ENABLE_*
+strategy/uni/archive/
+
+# Python
+__pycache__/
+*.pyc
